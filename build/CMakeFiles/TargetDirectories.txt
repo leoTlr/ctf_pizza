@@ -1,0 +1,3 @@
+/workspaces/pizza/build/CMakeFiles/rebuild_cache.dir
+/workspaces/pizza/build/CMakeFiles/pizzaservice.dir
+/workspaces/pizza/build/CMakeFiles/edit_cache.dir

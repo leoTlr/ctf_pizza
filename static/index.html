@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Pizza Ebingen</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+  <div class="container">
+    <div class="py-5 text-center">
+      <h2>Pizza bestellen</h2>
+      <p class="lead">Bitte wählen sie aus, welche und wie viele Pizzen sie haben möchten. Alle Pizzen haben einen Durchmesser von 32cm. Die Lieferung ist kostenlos, aber nur nach Albstadt möglich. Die übliche Lieferzeit beträgt 30min.</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-4 order-md-2 mb-4" id="order_list">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted">Bestellung</span>
+          <span class="badge badge-secondary badge-pill">0</span>
+        </h4>
+        <ul class="list-group mb-3" id="order_items">
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Gesamt</span>
+            <strong>0,00 €</strong>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-8 order-md-1">
+
+        <form action="/order" id="order_form" method="post" enctype="application/x-www-form-urlencoded"
+          class="needs-validation" name="order_form" novalidate>
+
+          <h4 class="mb-3">Lieferinformationen</h4>
+
+            <div class="mb-3">
+              <label for="name">Name</label>
+              <input type="text" name="name" class="form-control" id="name" placeholder="" value="" required />
+              <div class="invalid-feedback">Bitte Namen angeben</div>
+            </div>
+
+            <div class="mb-3">
+              <label>Lieferaddresse</label>
+              <input type="text" name="address" class="form-control" id="address"
+                placeholder="Johannesstraße 6 72458 Albstadt" required />
+              <div class="invalid-feedback">Bitte gültige Adresse angeben</div>
+            </div>
+
+          <hr class="mb-4">
+
+          <div class="input-group">
+            <select class="custom-select" id="pizza_select" required>
+              <option value="" selected>Auswahl...</option>
+              <option value="1">Margherita 4,50€</option>
+              <option value="2">Salami 5,00€</option>
+              <option value="3">Thunfisch 5.50€</option>
+              <option value="4">Döner 6,00€</option>
+              <option value="5">Spezial 6,50€</option>
+              <option value="6">Zufall 5,50€</option>
+            </select>
+            <div class="input-group-append">
+              <button class="btn btn-success" id="order_list_add" type="button">+</button>
+              <button class="btn btn-danger" id="order_list_remove" type="button">-</button>
+            </div>
+            <div class="invalid-feedback">Bitte mindestens eine Pizza hinzufügen</div>
+          </div>
+
+          <ul id="#dynamic_inputs">
+            <!--hidden input fields added on + button click-->
+          </ul>
+
+          <hr class="mb-4">
+
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Bestellen</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2019 Pizza GmbH</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Datenschutz</a></li>
+          <li class="list-inline-item"><a href="#">Allgemeine Geschäftsbedingungen</a></li>
+          <li class="list-inline-item"><a href="/pubkey">Public Key</a></li>
+          <li class="list-inline-item"><a href="#">Kontakt</a></li>
+        </ul>
+      </footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

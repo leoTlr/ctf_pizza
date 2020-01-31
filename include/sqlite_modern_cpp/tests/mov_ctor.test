@@ -1,0 +1,1 @@
+echo 'Compile error!' ; return 126

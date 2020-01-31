@@ -1,0 +1,11 @@
+{
+    "name" : "Pizza Ebingen",
+    "authors" : ["Leo"],
+    "points": 100, 
+    "flag_id_description": "flag_id is the name used when ordering",
+    "service_description": "order some pizza online",
+    "port" : 5101,
+    "getflag" : "scripts/getflag.py",
+    "setflag" : "scripts/setflag.py",
+    "is_working" : 1
+  }

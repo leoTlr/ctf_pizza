@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pizza Ebingen</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+    <div class="container-md">
+        <div class="py-5 text-center">
+            <h2>Rechnung</h2>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-sm-6">
+                <h3 class="text-dark mb-1">Pizza Ebingen</h3>
+                <div>Straße 1</div>
+                <div>72458 Albstadt</div>
+            </div>
+            <div class="col-sm-6" style="text-align:right;">
+                <h3 class="text-dark mb-1" id="customer_name"></h3>
+                <div id="customer_street"></div>
+                <div id="customer_city"></div>
+            </div>
+        </div>
+
+        <table class="table table-stripped" id="receipt_items_table">
+            <thead>
+                <tr>
+                    <th class="text-left">#</th>
+                    <th class="text-left strong">Pizza</th>
+                    <th class="text-right">Stückpreis</th>
+                    <th class="text-right">Anzahl</th>
+                    <th class="text-right">Betrag</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--fields added dynamically -->
+            </tbody>
+        </table>
+        <div class="row">
+            <div class="col-md-8">
+                <a class="btn btn-primary align-bottom text-center" href="/index.html">Neue Bestellung</a>
+            </div>
+            <div class="col-md-4">
+                <table class="table table-clear" id="receipt_total_table">
+                    <tbody>
+                        <tr>
+                            <td class="text-left">
+                                <strong class="text-dark">Zwischensumme</strong>
+                            </td>
+                            <td class="text-right" id="subtotal"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">
+                                <strong>Rabatt</strong>
+                            </td>
+                            <td class="text-right" id="discount"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">
+                                <strong class="text-dark">Gesamt</strong> </td>
+                            <td class="text-right">
+                                <strong class="text-dark" id="total"></strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">&copy; 2019 Pizza GmbH</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Datenschutz</a></li>
+                <li class="list-inline-item"><a href="#">Allgemeine Geschäftsbedingungen</a></li>
+                <li class="list-inline-item"><a href="/pubkey">Public Key</a></li>
+                <li class="list-inline-item"><a href="#">Kontakt</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

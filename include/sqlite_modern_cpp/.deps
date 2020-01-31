@@ -1,0 +1,110 @@
+tests/extended_exceptions.test: tests/extended_exceptions.cc \
+ hdr/sqlite_modern_cpp.h hdr/sqlite_modern_cpp/errors.h \
+ hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/exception_dont_execute_nested.test: tests/exception_dont_execute_nested.cc \
+ hdr/sqlite_modern_cpp.h hdr/sqlite_modern_cpp/errors.h \
+ hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/mov_ctor.test: tests/mov_ctor.cc hdr/sqlite_modern_cpp.h \
+ hdr/sqlite_modern_cpp/errors.h hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/flags.test: tests/flags.cc hdr/sqlite_modern_cpp.h \
+ hdr/sqlite_modern_cpp/errors.h hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/functions.test: tests/functions.cc hdr/sqlite_modern_cpp.h \
+ hdr/sqlite_modern_cpp/errors.h hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/error_log.test: tests/error_log.cc hdr/sqlite_modern_cpp.h \
+ hdr/sqlite_modern_cpp/errors.h hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h hdr/sqlite_modern_cpp/log.h
+tests/trycatchblocks.test: tests/trycatchblocks.cc hdr/sqlite_modern_cpp.h \
+ hdr/sqlite_modern_cpp/errors.h hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/readme_example.test: tests/readme_example.cc hdr/sqlite_modern_cpp.h \
+ hdr/sqlite_modern_cpp/errors.h hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/sqlcipher.test: tests/sqlcipher.cc
+tests/boost_optional.test: tests/boost_optional.cc hdr/sqlite_modern_cpp.h \
+ hdr/sqlite_modern_cpp/errors.h hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/nullptr_uniqueptr.test: tests/nullptr_uniqueptr.cc hdr/sqlite_modern_cpp.h \
+ hdr/sqlite_modern_cpp/errors.h hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/prepared_statment.test: tests/prepared_statment.cc hdr/sqlite_modern_cpp.h \
+ hdr/sqlite_modern_cpp/errors.h hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/exceptions.test: tests/exceptions.cc hdr/sqlite_modern_cpp.h \
+ hdr/sqlite_modern_cpp/errors.h hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/shared_connection.test: tests/shared_connection.cc hdr/sqlite_modern_cpp.h \
+ hdr/sqlite_modern_cpp/errors.h hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/blob_example.test: tests/blob_example.cc hdr/sqlite_modern_cpp.h \
+ hdr/sqlite_modern_cpp/errors.h hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/lvalue_functor_example.test: tests/lvalue_functor_example.cc \
+ hdr/sqlite_modern_cpp.h hdr/sqlite_modern_cpp/errors.h \
+ hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/std_optional.test: tests/std_optional.cc hdr/sqlite_modern_cpp.h \
+ hdr/sqlite_modern_cpp/errors.h hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/exception_dont_execute.test: tests/exception_dont_execute.cc \
+ hdr/sqlite_modern_cpp.h hdr/sqlite_modern_cpp/errors.h \
+ hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/simple_examples.test: tests/simple_examples.cc hdr/sqlite_modern_cpp.h \
+ hdr/sqlite_modern_cpp/errors.h hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/variant.test: tests/variant.cc hdr/sqlite_modern_cpp.h \
+ hdr/sqlite_modern_cpp/errors.h hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
+tests/error_log2.test: tests/error_log2.cc hdr/sqlite_modern_cpp.h \
+ hdr/sqlite_modern_cpp/errors.h hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h hdr/sqlite_modern_cpp/log.h
+tests/functors.test: tests/functors.cc hdr/sqlite_modern_cpp.h \
+ hdr/sqlite_modern_cpp/errors.h hdr/sqlite_modern_cpp/lists/error_codes.h \
+ hdr/sqlite_modern_cpp/utility/function_traits.h \
+ hdr/sqlite_modern_cpp/utility/uncaught_exceptions.h \
+ hdr/sqlite_modern_cpp/utility/utf16_utf8.h
