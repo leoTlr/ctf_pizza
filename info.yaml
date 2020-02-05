@@ -11,3 +11,5 @@ apt_dependencies:
     - libsqlite3-dev
     - sqlite3
     - libboost-all-dev
+pip_dependencies:
+    - aiohttp # dummy
