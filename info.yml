@@ -4,10 +4,10 @@ type: web
 description: order some pizza online
 flag_id_description: flag_id is the name used when ordering"
 apt_dependencies:
+    - g++ 
     - build-essential
-    - g++-8
-    - cmake
+    - cmake 
     - libssl-dev
     - libsqlite3-dev
-    - sqlite3 
-    - libboost1.67-dev # requires custom ppa:mhier/libboost-latest
+    - sqlite3
+    - libboost-all-dev
