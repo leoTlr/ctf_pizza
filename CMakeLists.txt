@@ -3,7 +3,7 @@ project(pizza)
 
 set(EXECUTABLE_OUTPUT_PATH ../)
 
-set(CMAKE_CXX_COMPILER /usr/bin/g++-8)
+#set(CMAKE_CXX_COMPILER /usr/bin/g++-8)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_REQUIRED_FLAGS -std=c++17)
@@ -28,13 +28,13 @@ include_directories(
 	../include/sqlite_modern_cpp/hdr/sqlite_modern_cpp.h
 )
 
-target_compile_options(pizzaservice PUBLIC -Wall -Wextra -g)
+target_compile_options(pizzaservice PUBLIC -Wall -Wextra -g -DBOOST_SYSTEM_NO_DEPRECATED) 
 
 target_link_libraries(pizzaservice PUBLIC
 	${OPENSSL_LIBRARIES}
 	-lpthread # boost::beast
-	-lstdc++fs # std::filesystem
-	-lboost_system # neccessary in ctf environment
-	#boost_beast
+	#-lstdc++fs # std::filesystem
+	-lboost_system # neccessary on ubuntu 16 and 18
+	#boost
 	-lsqlite3
 )
