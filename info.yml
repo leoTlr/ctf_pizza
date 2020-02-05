@@ -1,0 +1,15 @@
+architecture: x86_64
+service_name: Pizza Ebingen
+type: web
+description: order some pizza online
+flag_id_description: flag_id is the name used when ordering"
+apt_dependencies:
+    - g++ 
+    - build-essential
+    - cmake 
+    - libssl-dev
+    - libsqlite3-dev
+    - sqlite3
+    - libboost-all-dev
+pip_dependencies:
+    - aiohttp # dummy
