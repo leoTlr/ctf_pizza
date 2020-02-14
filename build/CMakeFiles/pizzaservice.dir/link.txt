@@ -1,1 +1,0 @@
-/usr/bin/g++-8     CMakeFiles/pizzaservice.dir/src/server.cpp.o CMakeFiles/pizzaservice.dir/src/http_server.cpp.o CMakeFiles/pizzaservice.dir/src/responses.cpp.o CMakeFiles/pizzaservice.dir/src/utils.cpp.o  -o ../pizzaservice /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so -lpthread -lstdc++fs -lboost_system -lsqlite3 
