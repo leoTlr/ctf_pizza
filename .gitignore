@@ -3,3 +3,5 @@ rsa_keys/
 pizzaservice
 order.db
 .vscode/
+__pycache__/
+pizzaservice
