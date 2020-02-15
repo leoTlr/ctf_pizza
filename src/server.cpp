@@ -124,8 +124,8 @@ int main(int argc, char** argv) {
 
     start_http_server(acc, sock, dbpath, keypair, server_name);
 
-    // register SIGINT and SIGTERM handler
-    net::signal_set signals {ioc, SIGINT, SIGTERM};
+    // register SIGINT and SIGTERM and SIGHUP handler
+    net::signal_set signals {ioc, SIGINT, SIGTERM, SIGHUP};
     signals.async_wait(
         [&] (beast::error_code const&, int) {
             std::cout << "\nsignal recieved. stopping server" << endl;
