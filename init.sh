@@ -27,9 +27,6 @@ KPRIV_FILE="$KEY_DIR/$KPRIV_NAME"
 
 BDIR="$DIR/build"
 
-EXECNAME="./pizzaservice"
-PORT="7777"
-
 #############################################################################################
 
 function generate_keys {
@@ -77,6 +74,8 @@ function build_exec {
     fi
 }
 
+mkdir -p $KEY_DIR $BDIR 2>/dev/null
+
 # generate rsa keypair in required format
 echo -n "[*] check if rsa keys exists ... "
 if [[ -d $KEY_DIR && -f $KPUB_FILE && -f $KPRIV_FILE && $NEW -eq 0 ]]; then
@@ -123,5 +122,3 @@ build_exec
 
 echo "[INFO] keys at $KEY_DIR"
 echo "[INFO] db at $DB_FILE"
-echo "[INFO] run server by typing:"
-echo "$EXECNAME $PORT $DB_FILE $KPUB_FILE $KPRIV_FILE"
