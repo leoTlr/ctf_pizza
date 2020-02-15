@@ -77,10 +77,9 @@ class SetFlag():
 # debug
 if __name__ == "__main__":
 
-    ip = '127.0.0.1'
-    port = 7777
+    ip = '10.40.1.1'
+    port = 5101
 
     sf_obj = SetFlag()
     sf_obj.execute(ip, port, _flag())
     print(sf_obj.result())
-

@@ -36,7 +36,7 @@ class GetFlag():
 
         self.error_msg = ''
         self.flag = ''
-        self.error = -1s
+        self.error = -1
 
         try:
             data_encoded = token.split('.')[1]
@@ -73,10 +73,14 @@ class GetFlag():
 
         try:
             data = str(data)
-            self.flag = loads(data)['address']
+            try:
+                self.flag = loads(data)['address']
+            except Exception as e:
+                self.flag = ''
+                self.error = 1
+                self.error_msg = str(e)
             self.error = 0 # functional
         except Exception as e:
-            print(str(e))
             self.error = 1
             self.error_msg = 'error deserializing json in response'
 
@@ -92,5 +96,5 @@ if __name__ == '__main__':
     from sys import argv
 
     gf_obj = GetFlag()
-    gf_obj.execute('127.0.0.1', 7777, argv[1], argv[2])
+    gf_obj.execute('10.40.1.1', 5101, argv[1], argv[2])
     print(gf_obj.result())
