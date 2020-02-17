@@ -33,7 +33,7 @@ The python exploit scripts need pip package ´pyjwt`. You can use pipenv (Pipfil
 ```bash
 pipenv shell
 pipenv update
-python3 exploit_client_signed_token.py 127.0.0.1 7777
+python3 exploit_client_signed_token.py 1 127.0.0.1 7777
 ```
 
 The .sh exploit scripts need httpie: https://github.com/jakubroztocil/httpie
